@@ -1,0 +1,47 @@
+/*regions.html*/
+
+.city-list {
+    padding: 120px 0;
+    background-color: #fff;
+}
+.city-list h2 {
+	color: #454545;
+    font-size: 20px;
+}
+.city-list p {
+	color: #a2a1a1;
+    font-size: 12px;
+}
+.bg-city-tab {
+	background-color: #f8f8f8;
+	padding: 16px 10px;	
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+
+}
+.full-btn {
+	border: 0;
+	border-radius: 0;
+	font-size: 20px;
+}
+.full-btn:hover {
+    color: #fff;
+    text-shadow: none;
+    background: #0484cd;
+}
+
+.prize-style {
+	margin-right: 15px;
+	border-right: 1px solid #c5c5c5;
+}
+
+.full-width {
+	width: 100%;
+}
+
+
+/*regions.html*/
+
+#cityImgs img {
+	border: 1px solid #fff;
+}
