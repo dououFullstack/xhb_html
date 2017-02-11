@@ -49,3 +49,65 @@
 /*apply_form.html*/
 
 
+
+/*about*/
+.regions-list ul {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.regions-list ul li {
+	list-style: none;
+    line-height: 35px;
+    color: #333;
+}
+
+.regions-list ul li a {
+	color: #00a3d9;
+	font-size: 18px;
+	padding-right: 20px;
+}
+.regions-list ul li a:hover {
+	color: #046b9b;
+	text-decoration: underline;
+}
+
+.regions-img img:hover {
+	opacity: 0.7;
+	cursor:pointer;
+}
+
+.order-list-icon {
+	color: #00a3d9;
+	font-size: 80px;
+	line-height: 80px;
+	right:0;
+
+}
+
+.guidelines h3 {
+	letter-spacing: 2px;
+	color: #00a3d9;
+	font-size: 24px;
+    line-height: 24px;
+    font-style: normal;
+    padding: 0;
+    margin-bottom: 17px;
+}
+
+.about-principle-item .iconBig {
+	color: #00a3d9;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+.about-principle-item h2 {
+	color: #424242;
+}
+
+.about-principle-item p {
+	color: #888;
+	margin-bottom: 40px;
+}
+

@@ -12,7 +12,7 @@ body {
     height: 100%;
 }
 .m-b-lg {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 .m-b-50 {
     margin-bottom: 50px;
