@@ -14,7 +14,7 @@
 }
 .bg-city-tab {
 	background-color: #f8f8f8;
-	padding: 16px 10px;	
+	padding: 16px 10px;
 	border-left: 1px solid #e6e6e6;
 	border-right: 1px solid #e6e6e6;
 
@@ -111,3 +111,58 @@
 	margin-bottom: 40px;
 }
 
+/* news.html && videos.html */
+.news-title{
+  border-bottom: 2px solid #00a3d9;
+  margin-bottom: 10px;
+}
+.news-btn{
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  padding: 10px 25px;
+}
+.news-btn.news-hidden{
+  background-color: #fff;
+  color: #444444;
+}
+.news-list{
+  padding: 36px 0;
+}
+.news-info{
+  padding: 0 50px 0px 20px;
+}
+.news-info h2{
+  color: #444444;
+}
+.news-info>p{
+  color: #888;
+  margin-bottom: 30px;
+}
+.news-gray{
+  color: #d2d6db;
+}
+.news-dotted{
+  border-bottom: 1px dotted #6c6c6c;
+}
+.news-page ul{
+  padding: 0;
+}
+.news-page ul li{
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #f3f3f3;
+  background-color: #fafafa;
+  margin-right: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.news-page li a{
+  color: #666;
+}
+.news-page .page-active{
+  background-color: #00b8f1;
+}
+.news-page li.page-active a{
+  color: #fff;
+}
