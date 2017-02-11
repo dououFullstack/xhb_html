@@ -370,12 +370,6 @@ p {
     color: #fff !important;
 }
 
-
-
-
-
-
-
 /* 5, footer */
 footer {
     padding: 44px 0;
@@ -402,7 +396,7 @@ footer ul li a {
     color: #333;
 }
 .footerLogoM {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .footer-info {
     padding: 18px;
