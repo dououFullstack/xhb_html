@@ -15,7 +15,7 @@ body {
     margin-bottom: 20px !important;
 }
 .m-b-50 {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
 }
 .m-t-50 {
     margin-top: 50px;
@@ -405,3 +405,21 @@ footer ul li a {
     background-color: #00a3d9;
     color: #fff;
 }
+
+
+
+/*  items style */
+.about-item .iconBig {
+    color: #00a3d9;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+.about-item h2 {
+    color: #424242;
+}
+
+.about-item p {
+    color: #888;
+    margin-bottom: 40px;
+}
+
