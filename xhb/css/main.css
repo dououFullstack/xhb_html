@@ -97,18 +97,8 @@
     margin-bottom: 17px;
 }
 
-.about-principle-item .iconBig {
-	color: #00a3d9;
-	margin-bottom: 20px;
+.about-item .iconBig {
 	font-size: 50px;
-}
-.about-principle-item h2 {
-	color: #424242;
-}
-
-.about-principle-item p {
-	color: #888;
-	margin-bottom: 40px;
 }
 
 /* news.html && videos.html */
