@@ -110,6 +110,7 @@ strong {
 }
 a {
     color: #00a3d9;
+    cursor: pointer;
 }
 a:hover,
 .active a {
