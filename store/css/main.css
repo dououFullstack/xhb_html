@@ -1,6 +1,13 @@
 
 /* home page */
-
+.store-cart-nav {
+    font-size: 20px;
+    color: #00a3d9;
+}
+.store-cart-nav span {
+    font-size: 14px;
+    font-family: sans-serif;
+}
 #storeImgs .item {	
 	margin: 10px;
 }
