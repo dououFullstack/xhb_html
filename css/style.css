@@ -141,6 +141,9 @@ p {
     padding: 33px 0;
     background-color: #fff;
 }
+.clearfix {
+    clear: both;
+}
 /*** buttons ***/
 
 .btn {
@@ -286,6 +289,28 @@ p {
 }
 /* page-info end */
 
+/* pagination start */
+ul.pagination {
+    margin: 20px 0 40px;
+    text-align: left;
+}
+ul.pagination li > a {
+    padding: 10px 15px;
+    margin: 0 6px 0 0;
+     border-bottom: none;
+    border: 1px solid #f3f3f3;
+    line-height: 1;
+    background-color: #fafafa;
+    display: inline-block;
+    border-radius: 0px;
+    color: #666666;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, ul.pagination li > a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, ul.pagination li > a:focus{
+    background-color: #00a3d9;
+    border-color: #00a3d9;
+    color: #fff;
+    
+}
 
 /* 1, ad */
 #ad {
