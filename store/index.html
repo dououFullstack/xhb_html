@@ -90,6 +90,26 @@
          </div>
       </section>
       <!-- search bar end-->
+      <!-- addtoCarModal -->
+      <div class="modal fade" id="carModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">温馨提示</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body text-center add-to-car-modal">
+                  <div><i class="fa fa-check iconBig"></i></div>
+                  已成功加入购物车！  
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btm-sm">去 结 算</button>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- list start-->
       <section>
          <div class="container">
@@ -102,7 +122,7 @@
                         <h3 class="title"><a href="#">Microduino芯片</a></h3>
                         <span class="price">￥39.00</span>
                         <div class="elements-list pull-right">
-                           <a href="#" class="add-item"><i class="fa fa-shopping-cart pr-10"></i>加入购物车</a>
+                           <a class="add-item" data-toggle="modal" data-target="#carModal"><i class="fa fa-shopping-cart pr-10"></i>加入购物车</a>
                         </div>
                      </div>
                   </div>
@@ -114,7 +134,7 @@
                         <h3 class="title"><a href="#">Microduino芯片</a></h3>
                         <span class="price">￥39.00</span>
                         <div class="elements-list pull-right">
-                           <a href="#" class="add-item"><i class="fa fa-shopping-cart pr-10"></i>加入购物车</a>
+                           <a href="#" class="add-item" data-toggle="modal" data-target="#carModal"><i class="fa fa-shopping-cart pr-10"></i>加入购物车</a>
                         </div>
                      </div>
                   </div>
@@ -126,7 +146,7 @@
                         <h3 class="title"><a href="#">Microduino芯片</a></h3>
                         <span class="price">￥39.00</span>
                         <div class="elements-list pull-right">
-                           <a href="#" class="add-item"><i class="fa fa-shopping-cart pr-10"></i>加入购物车</a>
+                           <a href="#" class="add-item" data-toggle="modal" data-target="#carModal"><i class="fa fa-shopping-cart pr-10"></i>加入购物车</a>
                         </div>
                      </div>
                   </div>
@@ -265,7 +285,7 @@
                });           
             });
          };      
-      })
+         })
       </script>
    </body>
 </html>

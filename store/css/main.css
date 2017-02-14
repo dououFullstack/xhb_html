@@ -84,3 +84,67 @@
 }
 
 
+.modal-header .close {
+    margin-top: -20px;
+} 
+.add-to-car-modal {
+    padding: 30px;
+}
+.add-to-car-modal i{
+    color: #00a3d9;
+    font-size: 70px;
+}
+/*shopping_car.html*/
+
+.page-info-breadcrumb {
+    padding: 6px 0;
+    -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06) inset;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06) inset;
+    background-color: #fafafa;
+    border-bottom: 1px solid #dadada;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+.store-cart-tab td {
+    
+    vertical-align: middle !important;
+    
+}
+.store-cart-tab img {
+    width: 150px;
+    border:1px solid #e6e6e6;
+}
+.store-cart-tab img:hover{
+    opacity: 0.8;
+}
+
+.store-cart-tab  .store-cart-quantity {
+    max-width: 100px;
+}
+.car-product-title {
+    font-size: 16px;
+}
+.store-cart-operate {
+    font-size: 13px;
+}
+
+.store-cart-amount {
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.store-cart-total {
+    text-align: right;
+}
+.store-cart-total span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00a3d9;
+    display: block;
+}
