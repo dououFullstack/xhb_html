@@ -8,7 +8,7 @@
     font-size: 14px;
     font-family: sans-serif;
 }
-#storeImgs .item {	
+#storeImgs .item {
 	margin: 10px;
 }
 .store-title {
@@ -20,7 +20,7 @@
 .store-btn-search {
 	z-index: 2;
     margin-left: -5px;
-    bottom: 3px;   
+    bottom: 3px;
     padding: 5px 12px;
 }
 .listing-item {
@@ -86,7 +86,7 @@
 
 .modal-header .close {
     margin-top: -20px;
-} 
+}
 .add-to-car-modal {
     padding: 30px;
 }
@@ -112,9 +112,9 @@
 }
 
 .store-cart-tab td {
-    
+
     vertical-align: middle !important;
-    
+
 }
 .store-cart-tab img {
     width: 150px;
@@ -147,4 +147,113 @@
     font-weight: bold;
     color: #00a3d9;
     display: block;
+}
+
+/* product */
+.product-full{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.product-full img{
+  width: 100%;
+  border: 1px solid #c4c4c4;
+}
+.product-slider{
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.product-slider .arrow{
+  position: absolute;
+  color: #dfdfdf;
+  font-size: 32px;
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+.product-prev.arrow{
+  top: 5px;
+}
+.product-next.arrow{
+  top: 5px;
+  right: 0px;
+}
+.product-small{
+  width: 80%;
+  margin: 0 auto;
+  /*border: 1px solid #000;*/
+}
+.product-small img{
+  cursor: pointer;
+  display: block;
+  width: 25%;
+  float: left;
+  padding: 5px;
+}
+.product-act{
+  font-size: 16px;
+  color: #666666;
+}
+.product-act span{
+  margin-right: 20px;
+}
+.product-act span i{
+  color: #00a3d9;
+}
+.product-info h3{
+  color: #696969;
+  padding: 10px 0;
+}
+.product-price{
+  color: #e75457;
+  background-color: #f3f3f3;
+  padding: 5px 20px;
+}
+.product-num{
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.product-num .col-md-2 span{
+  color: #b5b8b8;
+}
+.product-buy{
+  border: none;
+  background-color: #00a3d9;
+  padding: 10px 30px;
+  font-size: 22px;
+  border-radius: 5px;
+  color: #fff;
+}
+.product-title{
+  border-bottom: 2px solid #00a3d9;
+  margin-top: 20px;
+}
+.product-btn{
+  border: 0;
+  border-radius: 0;
+  font-size: 18px;
+  padding: 10px 30px;
+}
+.product-btn.product-hidden{
+  background-color: #fff;
+  color: #444444;
+}
+.product-related{
+  border: 1px solid #eef1f1;
+}
+.related-title{
+  background-color: #00a3d9;
+  color: #fff;
+  padding: 15px;
+}
+.related-title h3,p{
+  margin: 0;
+  letter-spacing: 3px;
+}
+.related-title span{
+  padding-top: 4px;
+  padding-right: 10px;
+}
+.related-detail{
+  padding:25px 20px;
 }
