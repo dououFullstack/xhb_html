@@ -61,18 +61,21 @@
               <div class="col-md-9">
                 <div class="row">
                   <div class="col-md-5">
-                    <div class="product-full">
-                      <img src="img/p1.jpg" alt="product">
+                    <div class="product-full" id="product">
+                      <img src="img/p1_lg.jpg" alt="product">
                     </div>
                     <div class="product-slider">
-                      <div class="product-prev arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-                      <div class="product-small clearfix">
-                        <img src="img/p1_s.jpg" alt="product-small">
-                        <img src="img/p2_s.jpg" alt="product-small">
-                        <img src="img/p1_s.jpg" alt="product-small">
-                        <img src="img/p2_s.jpg" alt="product-small">
+                      <div class="product-prev arrow" id='prev-arrow'><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                      <div class="product-small">
+                        <div class="small-slider clearfix" id='small-slider'>
+                          <img src="img/p1.jpg" alt="product-small">
+                          <img src="img/p2.jpg" alt="product-small">
+                          <img src="img/p1.jpg" alt="product-small">
+                          <img src="img/p2.jpg" alt="product-small">
+                          <img src="img/p1.jpg" alt="product-small">
+                        </div>
                       </div>
-                      <div class="product-next arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                      <div class="product-next arrow" id='next-arrow'><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
                     </div>
                     <div class="row">
                       <div class="col-md-12 product-act">
@@ -174,8 +177,84 @@
                         <h3 class="pull-left">相关模块</h3>
                         <p class="pull-right">more</p>
                       </div>
-                      <div class="related-detail">
-                        
+                      <div class="related-detail clearfix">
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>USBTTL</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>GPRS</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>GPS</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>USBTTL</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>NFC</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>AUDIO</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>USBTTL</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>USBTTL</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>USBTTL</span>
+                        </div>
+                        <div class="related-small">
+                          <img src="img/related1.jpg" alt="img" />
+                          <span>USBTTL</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-related">
+                      <div class="related-title clearfix">
+                        <span class="glyphicon glyphicon-align-justify pull-left" aria-hidden="true"></span>
+                        <h3 class="pull-left">相关商品</h3>
+                        <p class="pull-right">more</p>
+                      </div>
+                      <div class="related-detail clearfix">
+                        <div class="related-pro">
+                          <img src="img/related2.jpg" alt="">
+                          <img src="img/related2.jpg" alt="">
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+
+                    <div class="product-related">
+                      <div class="related-title clearfix">
+                        <span class="glyphicon glyphicon-align-justify pull-left" aria-hidden="true"></span>
+                        <h3 class="pull-left">相关商品</h3>
+                        <p class="pull-right">more</p>
+                      </div>
+                      <div class="related-detail clearfix">
+                        <div class="related-video">
+                          <img src="img/related3.jpg" alt="img">
+                          <p class="no-p-space">视频：第四届中国创新</p>
+                          <p class="no-p-space">标签： 0 </p>
+                          <span><i class="fa fa-commenting-o" aria-hidden="true"></i> 365 <i class="fa fa-eye" aria-hidden="true"></i> 3452</span>
+                        </div>
+                        <div class="related-video">
+                          <img src="img/related3.jpg" alt="img">
+                          <p class="no-p-space">视频：第四届中国创新</p>
+                          <p class="no-p-space">标签： 0 </p>
+                          <span><i class="fa fa-commenting-o" aria-hidden="true"></i> 365 <i class="fa fa-eye" aria-hidden="true"></i> 3452</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -225,9 +304,38 @@
       <!-- iCheck -->
       <script src="../plugin/iCheck/icheck.min.js"></script>
       <script>
-         $(document).ready(function () {
-
-         });
+        $(document).ready(function () {
+          // 切换大图
+          $('#small-slider img').click(function () {
+            var urlArr = $(this).attr('src').split('.');
+            var fullUrl = urlArr[0]+'_lg.' + urlArr[1];
+            $('#product img').attr('src',fullUrl)
+          });
+          // 小轮播
+          var index = $('#small-slider img').length;
+          $('#small-slider').css('width',index*25+'%');
+          $('#small-slider img').css('width',100/index+'%');
+          var nowShow = 0;
+          var step = 4 - index;
+          function checkSlider(slide) {
+            var nextShow = nowShow + slide;
+            console.log(nextShow);
+            if (nextShow > 0) {
+              return false;
+            }
+            if (nextShow < step) {
+              return false;
+            }
+            nowShow +=slide;
+            $('#small-slider').css('marginLeft',25*nowShow+'%');
+          }
+          $('#prev-arrow').click(function () {
+            checkSlider(1)
+          })
+          $('#next-arrow').click(function () {
+            checkSlider(-1)
+          })
+        });
       </script>
    </body>
 </html>
