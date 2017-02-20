@@ -307,11 +307,16 @@
 }
 .checkout .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
     background-color: #00a3d9;
+
 }
 
 .checkout .nav-justified {
     width: 100%;
     border-radius: 0;
+}
+
+.checkout .nav-justified i{
+    font-size: 14px;
 }
 .checkout .box {
     background: #fff;
@@ -335,6 +340,7 @@
     margin: 10px 1px;
     padding-top: 8px;
     border: solid 1px #eeeeee;
+    margin-top: 20px;
 }
 .checkout .box-gray h1 {
     font-size: 16px;
@@ -354,6 +360,12 @@
     background-color: #f9f7f8;
     letter-spacing: 3px;
 }
+
+.checkout .checkout-gray-btn:hover {
+    color: #00a3d9;
+    background-color: #fff;
+}
+
 .checkout .store-cart-tab img {
     width: 100px;
 }
