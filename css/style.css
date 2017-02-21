@@ -313,6 +313,135 @@ ul.pagination li > a {
     
 }
 
+/* log in modal */
+.modal-open .page-wrapper {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+.modal-content {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.modal-content .modal-header {
+    background-color: #00a3d9;
+}
+.close {
+    font-size: 28px;
+    font-weight: normal;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+.modal-content .modal-title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+.modal-footer {
+    background-color: #fcfcfc;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top: 1px solid #f4f4f4;
+}
+.centered-column {
+    float: none;
+    margin: 0 auto;
+}
+.centered-column h4 {
+    font-size: 18px;
+    color: #343434;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.list-inline {
+    margin-top: 9px;
+    margin-bottom: 8px;
+}
+.login-icons i {
+    background-color: #00a3d9; 
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.login-icons span {
+    color: #c1c1c0;
+    margin: 0 5px;
+}
+.login-icons a {
+    color: #666;
+}
+.login-icons a:hover {
+    color: #00a3d9;
+}
+.login-whchat {
+    background-color: #00cc00 !important;
+}
+.login-weibo {
+    background-color: #f29600 !important;
+}
+
+@media (min-width: 768px) {
+    .modal-login {
+        width: 400px;
+    }
+    .modal-dialog  {
+        padding-top: 10%;
+    }
+}
+
+
+/* Forms */
+
+.forms-container {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form {
+    margin: 20px 0;
+}
+textarea {
+    resize: vertical;
+}
+
+
+.form-control {
+    border-radius: 0;
+    background: #ffffff;
+    height: 40px;
+    padding-right: 30px;
+    border-color: #acacac;
+    color: #666666;
+    position: relative;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+}
+.form-control:focus {
+    border-color: #666666;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+}
+select.form-control {
+    padding-right: 5px;
+}
+.form-control-feedback {
+    width: 40px;
+    height: 40px;
+    line-height: 42px !important;
+    top: 0;
+}
+.widthfull {
+    min-width: 100% !important;
+}
+
+
+
+
 /* 1, ad */
 #ad {
     padding-top: 44px;

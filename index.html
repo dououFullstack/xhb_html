@@ -34,55 +34,98 @@
                      <li><a href="#">众包众筹</a> </li>
                      <li><a href="#">IOT CLOUD</a> </li>
                      <li><a href="#">社交</a> </li>
-                     <li><a href="#">登录</a> </li>
+                     <li><a href="#"  data-toggle="modal" data-target="#login">登录</a> </li>
                   </ul>
                </div>
             </nav>
          </div>
       </header>
       <!-- header end-->
+
+      
+      <!-- login Modal start -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog">
+         <div class="modal-dialog modal-login">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title">欢迎登录</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-md-11 col-sm-11 centered-column">
+                        <div class="forms-container">
+                           <form class="form-wrapper" method="post" role="form" id="sign_up">
+                              <!--  <h4 class="text-center">邮箱/用户名/已验证手机登录 </h4> -->
+                              <div class="form-group  clearfix has-feedback"> 
+                                 <input type="email" class="form-control" placeholder="邮箱/用户名/已验证手机" required>
+                                 <i class="fa fa-user form-control-feedback"></i>  
+                              </div>
+                              <div class="form-group has-feedback">
+                                 <input type="password" class="form-control" placeholder="密码" required>
+                                 <i class="fa fa-lock form-control-feedback"></i>
+                              </div>
+                              <div class="form-group">
+                                 <div>
+                                    <ul class="list-inline">
+                                       <li>
+                                          <label>
+                                          <input type="checkbox" required> 记住账户
+                                          </label>
+                                       </li>
+                                       <li class="pull-right"><a href="#">忘记密码?</a></li>
+                                    </ul>
+                                    <button type="submit" class="btn btn-group btn-gray btn-sm widthfull">登录</button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- modal-body end-->
+               <div class="modal-footer">
+                  <ul class="list-inline">
+                     <li class="pull-left login-icons"> <i class="fa fa-qq login-qq"></i> <a href="#">QQ</a>   <span> | </span> <i class="fa fa-weixin login-whchat"></i> <a href="#">微信</a> <span> | </span> <i class="fa fa-weibo login-weibo"></i> <a href="#">微博</a> </li>
+                     <li class="pull-right"><a href="sign_up.html">立即注册>></a></li>
+                  </ul>
+               </div>
+               <!-- modal-footer end-->
+            </div>
+         </div>
+      </div>
+      <!-- login Modal end-->
+
+
       <!-- content start -->
       <!-- slider start-->
-
-<section id="main-carousel" class="carousel slide" data-ride="carousel">
-       <!-- Indicators -->
+      <section id="main-carousel" class="carousel slide" data-ride="carousel">
+         <!-- Indicators -->
          <ol class="carousel-indicators">
             <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#main-carousel" data-slide-to="1"></li>
          </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/slider/slider01.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img src="images/slider/slider02.jpg" alt="Chania">
-    </div>
-  </div>
-</section>
-
-
-
-
-
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner" role="listbox">
+            <div class="item active">
+               <img src="images/slider/slider01.jpg" alt="Chania">
+            </div>
+            <div class="item">
+               <img src="images/slider/slider02.jpg" alt="Chania">
+            </div>
+         </div>
+      </section>
       <!-- slider end-->
-
-
-
-
-
       <!-- About us start-->
       <section class="slice">
          <div class="container">
             <div class="row">
                <div class="col-xs-12">
                   <h1>关于网络工坊</h1>
-                 <!--  <h2 class="subTitle">About Us</h2> -->
+                  <!--  <h2 class="subTitle">About Us</h2> -->
                   <div class="separator m-b-50"></div>
                   <div class="text-center home-about">
-                  网络工坊是工业和信息化部软件与集成电路促进中心（简称CSIP）的智能硬件设计、测试、产品化平台的总称，包括智能硬件设计和云创平台，智能硬件测试，智能硬件产品化等服务内容。网络工坊与多家智能硬件设计平台合作，将产品模型设计模块化，为中小企业和创客提供智能硬件实验环境和技术支持，让企业和创客以低成本参与到智能硬件的研发和应用中，使设计者在最短的时间内验证自己的想法。
+                     网络工坊是工业和信息化部软件与集成电路促进中心（简称CSIP）的智能硬件设计、测试、产品化平台的总称，包括智能硬件设计和云创平台，智能硬件测试，智能硬件产品化等服务内容。网络工坊与多家智能硬件设计平台合作，将产品模型设计模块化，为中小企业和创客提供智能硬件实验环境和技术支持，让企业和创客以低成本参与到智能硬件的研发和应用中，使设计者在最短的时间内验证自己的想法。
                   </div>
                </div>
             </div>
@@ -92,7 +135,8 @@
                      <i class="fa fa-bars iconBig"></i>
                      <h2>基础服务</h2>
                      <p class="no-p-space">为在园企业提供优质旳办公环境<br>
-及完善旳物业服务</p>
+                        及完善旳物业服务
+                     </p>
                   </div>
                </div>
                <div class="col-md-3 text-center">
@@ -100,7 +144,8 @@
                      <i class="fa fa-cogs iconBig"></i>
                      <h2>科技服务</h2>
                      <p class="no-p-space">建立以创新为基础旳技术<br>
-                     服务体系</p>
+                        服务体系
+                     </p>
                   </div>
                </div>
                <div class="col-md-3 text-center">
@@ -108,7 +153,8 @@
                      <i class="fa fa-user iconBig"></i>
                      <h2>创业服务</h2>
                      <p class="no-p-space">建立以人本旳完善旳技术<br>
-服务体系</p>
+                        服务体系
+                     </p>
                   </div>
                </div>
                <div class="col-md-3 text-center">
@@ -116,25 +162,17 @@
                      <i class="fa fa-paper-plane iconBig"></i>
                      <h2>创业投资</h2>
                      <p class="no-p-space">以资本为引擎推动企业成长<br>
-与创业发展</p>
+                        与创业发展
+                     </p>
                   </div>
                </div>
-
-
             </div>
          </div>
       </section>
       <!-- about us end-->
-
-
-
-
-
       <!-- 热推产品 start -->
       <section class="slice color1" id="news">
          <div class="container">
-
-
             <div class="row">
                <div class="col-xs-12">
                   <h1>热推产品</h1>
@@ -142,7 +180,6 @@
                   <div class="separator"></div>
                </div>
             </div>
-
             <div class="row">
                <article class="col-sm-4">
                   <section> 
@@ -153,7 +190,6 @@
                      <p clas="no-p-space">Makee.io 團隊使用 MediaTek 最新的 Linkit smart 7688 開發出能依路況不同...</p>
                   </section>
                </article>
-
                <article class="col-sm-4">
                   <section> 
                      <a href="#"><img src="images/project/p2.jpg" class="img-responsive" alt="image news2" /> </a>
@@ -176,7 +212,6 @@
          </div>
       </section>
       <!-- 热推产品 end -->
-
       <!-- 合作伙伴 start-->
       <section class="slice">
          <div class="container">
@@ -193,9 +228,6 @@
          </div>
       </section>
       <!-- 合作伙伴 end-->
-
-
-
       <!-- Footer -->
       <footer>
          <section id="mainFooter">
