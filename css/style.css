@@ -4,7 +4,7 @@ html {
 body {
     font-size: 14px;
     line-height: 1.50;
-    font-family: "Microsoft YaHei", "微软雅黑", "宋体", "黑体", sans-serif;
+    font-family: sans-serif, "Microsoft YaHei", "微软雅黑", "宋体", "黑体";
     -webkit-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
@@ -440,6 +440,34 @@ select.form-control {
 }
 
 
+/* Sign_up page */
+
+.bg_signup {
+    background-color: #f3f3f3;
+}
+.main-container {
+    padding: 30px 0;
+}
+.form-block {
+    width: 630px;
+    border: 1px solid #f1f1f1;
+    background-color: #ffffff;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.sign-up-title {
+    color: #666;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+    .form-block {
+        width: 90%;
+    }
+}
 
 
 /* 1, ad */
