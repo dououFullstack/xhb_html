@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>网络工坊后台管理系统</title>
+      <meta name="description" content="本次大赛由工业和信息化部电子信息司主办，旨在推动智能硬件核心技术的转化与智能硬件应用的升级，提高相关专业年轻人在智能硬件技术应用创新设计能力、促进智能硬件行业技术的应用升级.">
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- Bootstrap  -->
+      <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+      <!-- icon fonts -->
+      <link type="text/css" rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+      <!-- summernote css -->
+      <link href="plugins/summernote/summernote.css" rel="stylesheet">
+      <!-- Custom css -->
+      <link type="text/css" rel="stylesheet" href="css/main.css">
+      <!-- Favicons-->
+      <link rel="shortcut icon" href="../images/favicons.png">
+   </head>
+   <body>
+      <div class="nav-side-menu">
+         <div class="admin-brand">
+            <h4>网络工坊后台管理系统</h4>
+         </div>
+         <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+         <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+               <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-dashboard fa-lg"></i> 芯火杯管理 <span class="arrow"></span></a>
+               </li>
+               <ul class="sub-menu collapse" id="products">
+                  <li><a href="index.html">报名表</a></li>
+                  <li class="active"><a href="admin_news.html">新闻资讯</a></li>
+                  <li><a href="#">项目申请</a></li>
+               </ul>
+               <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> 电商管理 <span class="arrow"></span></a>
+               </li>
+               <ul class="sub-menu collapse" id="service">
+                  <li>电商上架申请</li>
+                  <li>商品新增</li>
+                  <li>管理3</li>
+               </ul>
+               <li data-toggle="collapse" data-target="#chou" class="collapsed">
+                  <a href="#"><i class="fa fa-plug fa-lg"></i> 众筹管理 <span class="arrow"></span></a>
+               </li>
+               <ul class="sub-menu collapse" id="chou">
+                  <li>众筹管理 1</li>
+                  <li>众筹管理 2</li>
+                  <li>众筹管理 3</li>
+               </ul>
+               <li data-toggle="collapse" data-target="#bao" class="collapsed">
+                  <a href="#"><i class="fa fa-cog fa-lg"></i> 众包管理 <span class="arrow"></span></a>
+               </li>
+               <ul class="sub-menu collapse" id="bao">
+                  <li>众包管理 1</li>
+                  <li>众包管理 2</li>
+                  <li>众包管理 3</li>
+               </ul>
+               <li data-toggle="collapse" data-target="#mooc" class="collapsed">
+                  <a href="#"><i class="fa fa-video-camera fa-lg"></i> MOOC管理 <span class="arrow"></span></a>
+               </li>
+               <ul class="sub-menu collapse" id="mooc">
+                  <li>MOOC管理 1</li>
+                  <li>MOOC管理 2</li>
+                  <li>MOOC管理 3</li>
+               </ul>
+               <li data-toggle="collapse" data-target="#social" class="collapsed">
+                  <a href="#"><i class="fa fa-users fa-lg"></i> 社交管理 <span class="arrow"></span></a>
+               </li>
+               <ul class="sub-menu collapse" id="social">
+                  <li>社交管理 1</li>
+                  <li>社交管理 2</li>
+                  <li>社交管理 3</li>
+               </ul>
+            </ul>
+         </div>
+      </div>
+      <div class="container" id="main">
+      <div class="row">
+      <div class="col-md-10">
+         <h2 class="admin-title">新增新闻</h2>
+         <hr>
+         <form>
+            <div class="form-group">
+               <label>新闻标题</label>
+               <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+               <label>新闻简介</label>
+               <textarea class="form-control" rows="3"></textarea>
+               <small class="form-text text-muted">简介会出现在新闻列表页面，不超过100字</small>
+            </div>
+            <div class="form-group">
+               <label>新闻分类</label>
+               <select class="form-control">
+                  <option>行业新闻</option>
+                  <option>大赛新闻</option>
+                  <option>3</option>
+                  <option>4</option>
+               </select>
+            </div>
+            <div class="form-group">
+               <label>上传新闻封面图片</label>
+               <input type="file" class="form-control-file">
+               <small id="fileHelp" class="form-text text-muted">图片格式支持JPG,PNG,GIF，文件不得大于200k.</small>
+            </div>
+            <label>新闻详细内容</label>
+            <div id="summernote">
+               <p>在这里编辑新闻详细内容。。。</p>
+            </div>
+            <button type="submit" class="btn btn-primary m-b-60">提交</button>
+         </form>
+      </div>
+      <script type="text/javascript" src="../js/jquery/jquery.1.10.2.min.js"></script>
+      <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+      <!--bower install summernote  http://summernote.org/getting-started-->
+      <script src="plugins/summernote/summernote.min.js"></script>
+      <script src="plugins/summernote/lang/summernote-zh-CN.js"></script>
+      <script>
+         $(document).ready(function() {
+             $('#summernote').summernote({
+                 lang: 'zh-CN',
+                 minHeight: 300
+             });
+         });
+      </script>
+   </body>
+</html>

@@ -149,7 +149,14 @@ body {
   color: #333;
   font-size: 28px;
   letter-spacing: 2px;
+  margin-top: 30px;
 }
 .admin-login-sm {
   width: 400px;
+}
+.m-b-60 {
+  margin-bottom: 60px;
+}
+.m-t-20 {
+  margin-top: 20px;
 }
