@@ -9,19 +9,11 @@
     font-family: sans-serif;
 }
 #storeImgs .item {
-	margin: 10px;
-}
-
-#storeImgs .item {
+	  margin: 10px;
     background: #FFF;
     padding: 0px;
     margin: 10px;
-/*    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;*/
-    text-align: center;
-   /* min-height: 250px;*/
-   height: auto;
+    height: auto;
 }
 
 #storeImgs .image-with-label {
