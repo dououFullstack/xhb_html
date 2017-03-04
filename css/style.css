@@ -8,9 +8,10 @@ body {
     -webkit-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 66px;
+    /*padding-top: 66px;*/
     height: 100%;
 }
+
 .m-b-lg {
     margin-bottom: 20px !important;
 }
@@ -268,7 +269,7 @@ p {
 
 /* page-info start */
 .page-info {
-    padding-top: 75px;
+    padding-top: 145px;
     padding-bottom: 10px;
     background-color: #001d48;
     background: -webkit-linear-gradient(#001c47, #083276); /* For Safari 5.1 to 6.0 */
@@ -472,7 +473,7 @@ select.form-control {
 
 /* 1, ad */
 #ad {
-    padding-top: 44px;
+    padding-top: 100px;
     background-image: url('../images/bg_01.jpg');
     background-size: cover;
     background-color: #001a48;

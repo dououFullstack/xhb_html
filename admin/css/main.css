@@ -141,10 +141,6 @@
     float: right;
   }
 }
-body {
-  margin: 0px;
-  padding: 0px;
-}
 .admin-title {
   color: #333;
   font-size: 28px;

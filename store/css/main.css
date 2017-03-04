@@ -11,17 +11,61 @@
 #storeImgs .item {
 	margin: 10px;
 }
+
+#storeImgs .item {
+    background: #FFF;
+    padding: 0px;
+    margin: 10px;
+/*    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;*/
+    text-align: center;
+   /* min-height: 250px;*/
+   height: auto;
+}
+
+#storeImgs .image-with-label {
+    position: relative;
+    clear: both;
+    font-size: 16px;
+}
+
+#storeImgs .store-item-name {
+    position: absolute;
+    left: 7%;
+    top: 3%;
+    color: #333;
+}
+
+#storeImgs .store-item-price {
+    position: absolute;
+    left: 0;
+    bottom: 7%;
+    padding: 6px 0;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 60px;
+    color: #fff;
+    background: red;
+    background: -webkit-linear-gradient(right, rgba(0,163,217,0), rgba(0,163,217,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgba(0,163,217,0), rgba(0,163,217,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgba(0,163,217,0), rgba(0,163,217,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, rgba(0,163,217,0), rgba(0,163,217,1)); /* Standard syntax (must be last) */
+}
 .store-title {
 	color: #494949;
 	font-size: 30px;
 	letter-spacing: 2px;
+  margin-top: 10px;
 }
-
+.store-search-form{
+    margin:0;
+}
 .store-btn-search {
 	z-index: 2;
     margin-left: -5px;
     bottom: 3px;
-    padding: 5px 12px;
+    padding: 8px 12px;
 }
 .listing-item {
     margin: 0 0 20px 0;
